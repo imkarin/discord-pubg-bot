@@ -1,5 +1,9 @@
 // Require modules
 require('dotenv').config();
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+
 const Discord = require('discord.js');
 const { prefix } = require('./config.json');
 
@@ -193,3 +197,11 @@ client.on('message', (msg) => {
 
 // Log the bot into Discord
 client.login(process.env.BOT_TOKEN);
+
+// Express server stuff
+app.set('port', (process.env.PORT || 3000));
+app.use(express.static('public'));
+
+app.get('/', (req, res) => res.send('Hi, I\'m the PUBG Location Discord bot!'));
+
+app.listen(port, () => console.log(`App running on port: ${port}`));
