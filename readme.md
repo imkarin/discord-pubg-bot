@@ -1,4 +1,4 @@
-# PUBG drop location bot for Discord! 🪂✈️
+# PUBG drop location bot for Discord! 🎮
 This is a fun little project for PUBG players using Discord. Tell the bot which map you're playing on, and it will suggest a random drop location for you.
 
 ## How to use
