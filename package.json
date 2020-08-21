@@ -1,0 +1,21 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "Bot for Discord",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "author": "karimeij",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
